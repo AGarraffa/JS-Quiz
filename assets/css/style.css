@@ -1,0 +1,122 @@
+:root {
+    --yellow:#FFE162;
+    --red: #FF6464;
+    --darkred: #853434;
+    --green: #91C483;
+    --gray: #EEEEEE;
+    
+}
+
+* {
+    /* outline: 1px solid red; */
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background-color: var(--gray);
+}
+
+.hidden  {
+    display: none;
+    text-align: center;
+}
+
+.scores {
+    list-style: none;
+}
+
+.start-button, .stop-button{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    font-size: 4rem;
+    padding: 5px;
+}
+
+#start, #stop {
+    border-radius: 10px;
+    width: 200px;
+    background-color: white;
+    justify-content: center;
+}
+
+#start:hover, #stop:hover {
+    color: white;
+    background-color: black;
+    transition: 0.4s;
+}
+
+.clock {
+    text-align: center;
+    color: var(--darkred);
+}
+
+.clock h1 {
+    size: 10rem;
+}
+
+.quiz-area {
+    display: flex;
+    height: 12rem;
+
+}
+
+.question-area {
+    background-color: var(--yellow);
+    flex: 3;
+    margin: 15px;
+    border-radius: 5px;
+    border: solid black 2px;
+    
+}
+
+.question-area h1 {
+    text-align: center;
+}
+
+.question-area p {
+    text-align: center;
+    padding: 50px;
+}
+
+.score-area {
+    flex: 1;
+    background-color: var(--green);
+    display: block;
+    right: 20px;
+    height: 14rem;
+    margin: 15px;
+    border-radius: 5px;
+    border: solid black 2px;
+}
+
+.score-area h1 {
+    text-align: center;
+}
+
+.answer {
+    background-color: var(--red);
+    font-size: .8rem;
+    min-width: 150px;
+    color: white;
+    border-radius: 10px;
+    padding: 1px 3px 1px 3px;
+}
+
+.answer:hover {
+    background-color: var(--darkred);
+    transition: 0.4s;
+}
+
+.answer-btns {
+    align-content: center;
+    padding: 10px;
+}
+
+.answer-btns li {
+    padding: 2px;
+}
+
+.scores li {
+    padding: 2px;
+}

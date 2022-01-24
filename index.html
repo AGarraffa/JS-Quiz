@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <title>Javascript Quiz</title>
+</head>
+<body>
+
+    <div class = "start-button">
+        <button id="start">Start</button>
+    </div>
+
+    <div class = "clock">
+        <h1 id="timer"></h1>
+    </div>
+
+    <div class = "quiz-area">
+        <div class = "question-area">
+            <h1 id="question">Welcome to the quiz!</h1>
+            <p id="splash">Press the start button to begin!</p>
+            
+            <ul class = "answer-btns">
+                <li class="hidden"><button class="answer"></button></li>
+                <li class="hidden"><button class="answer"></button></li>
+                <li class="hidden"><button class="answer"></button></li>
+                <li class="hidden"><button class="answer"></button></li>
+            </ul>
+
+            <p id="congrats"></p>
+        </div>
+
+        <div class = "score-area">
+            <h1>Hi Scores</h1>
+            <ul id = "high-scores" class = "scores"></ul>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/quiz.js"></script>
+</body>
+</html>
+
